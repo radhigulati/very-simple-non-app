@@ -2,12 +2,14 @@ version: 2.1
 
 jobs:
   build:
+    circleci_ip_ranges: true
     docker:
       - image: cimg/base:2021.05
     steps:
       - checkout
       - run: echo "building app"
       - run: echo "testing app"
+      - run: curl -s http://whatismyip.akamai.com
       
        
 
