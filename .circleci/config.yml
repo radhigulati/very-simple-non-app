@@ -7,8 +7,7 @@ jobs:
       - image: cimg/base:2021.05
     steps:
       - checkout
-      - run: echo "building app"
-      - run: echo "testing app"
+      - run: echo "build app"
       - run: curl -s http://whatismyip.akamai.com
       
        
